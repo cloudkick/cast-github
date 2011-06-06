@@ -1,0 +1,44 @@
+{
+  "name": "cast-github",
+  "description": "Cast plugin for integration with Github",
+  "version": "0.1.0-dev",
+  "author": "Cloudkick, Inc. http://www.cloudkick.com",
+  "keywords": [ "cast", "deployment", "deploying", "git", "github" ],
+  "homepage": "http://www.cast-project.org/plugins",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cloudkick/cast-github.git"
+  },
+  "directories": {
+    "lib": "./lib",
+    "bin": ""
+  },
+  "scripts": {
+    "test": "scons test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "whiskey": ">= 0.3.4"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "main": "",
+  "bin": {},
+
+  "services": [],
+  "agent_version": ">= 0.1.0",
+  "settings": {
+    "username": {
+      "type": "string"
+    },
+    "api_token": {
+      "type": "string"
+    },
+    "project_names": {
+      "type": "array"
+    }
+  }
+}
+
