@@ -27,8 +27,9 @@
   "main": "",
   "bin": {},
 
-  "services": [],
   "agent_version": ">= 0.1.0",
+  "services": [],
+  "jobs": [],
   "settings": {
     "username": {
       "type": "string"
@@ -36,8 +37,9 @@
     "api_token": {
       "type": "string"
     },
-    "project_names": {
-      "type": "array"
+    "projects": {
+      "type": "object",
+      "validator": "is_valid_mapping"
     }
   }
 }

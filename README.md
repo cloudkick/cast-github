@@ -12,6 +12,29 @@ the Cast plugin API.
 
 ...
 
+## Example settings
+
+"github": {
+  "username": "your_github_username",
+  "api_key": "apikey12345",
+
+  "projects": {
+    "project_name_1": {
+        "filters": {
+          "tag": "v.+?",
+          "branch": ""
+        }
+    },
+
+    "project_name_2": {
+        "filters": {
+          "tag": "",
+          "branch": "production"
+        }
+    }
+  }
+}
+
 ## Notes
 
 For now you need to bundle all the dependencies with your plugin. In the future
